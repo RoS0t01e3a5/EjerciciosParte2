@@ -1,0 +1,10 @@
+Algoritmo EjercicioOcho
+	opciones="A"
+	Mientras opciones= "A" Hacer
+		Escribir "Multiplos de cinco"
+		num=Aleatorio(1,100)
+		Escribir num*5
+		Escribir"A,-Seguir S.-salir "
+		Leer opciones
+	FinMientras
+FinAlgoritmo

@@ -1,0 +1,34 @@
+AlgoritmoEjercicioTrece
+	opcion = "No salir"	
+	Mientras opcion!= "s"
+
+		Escribir "Elija una opcion"
+		Escribir "a Sumar"
+		Escribir "b Dividir"
+		Escribir "s salir"
+		Leer opcion
+	
+	Segun opcion Hacer
+
+	a: 	Escribir "Ingresar el primer numero"
+		Leer primerNumero
+		Escribir "Ingresar el segundo numero" 
+		Leer segundoNumero
+		sumatoria=primerNumero+segundoNumero
+		Escribir " La sumatoria es ", sumatoria
+
+	b:	Escribir "Ingresar el dividendo"
+		Leer primerNumero
+		Escribir "Ingresar el divisor" 
+		Leer segundoNumero
+		division=primerNumero/segundoNumero
+		Si divisor!=0 Entonces
+			Escribir " La division es como resultado", division
+		SiNo
+			Escribir " El divisor debe ser mayor a cero"
+		FinSi
+	FinSegun
+	FinMientras
+FinAlgoritmo
+		
+

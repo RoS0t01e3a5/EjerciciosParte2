@@ -1,0 +1,22 @@
+Algoritmo EjercicioCinco
+	Escribir " Cuantas edades ingresara "
+	Leer cantidad
+	edadMenor=0
+	edadMayor=0
+	i=0
+	Mientras (i<cantidad) Hacer
+		i=i+1
+		Escribir " De la persona ", i, " ingrese en numeros la edad"
+		Leer varEdad
+		Escribir " De la persona ", i, " ingrese su sexo (femenino o masculino) "
+		Leer varSexo
+		si (varEdad>=18 y varSexo="femenino")Entonces
+			edadMayor = edadmayor+1
+		SiNo
+			si(varEdad<18 y varSexo= "maculino" ) Entonces
+			Finsi
+		FinSi
+	FinMientras
+	Escribir
+	Escribir
+FinAlgoritmo

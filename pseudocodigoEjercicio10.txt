@@ -1,0 +1,25 @@
+Algoritmo EjercicioDiez
+	
+	multiplicar=0
+	aglomeradorSuma=0
+	Mientras aglomeradorSuma<1000 Hacer
+		Escribir "Ingresar numero"
+		Leer varNumero
+		aglomeradorsuma = aglomeradorsuma+varNumero
+		resta= 1000-aglomeradorsuma
+		Escribir " Seleccionable ", resta
+		Si (varNumero modd 6=0) Entonces
+			multiplicacion = multiplicacion+1
+		FinSi
+		Si (varNumero>=1 Y varNumero>=10) Entonces
+			sumatoria = sumatoria+varNumero
+		Finsi
+	FinMientras
+
+	Escribir "a) La cantidad de numeros multiplos de seis son ", multiplicacion
+	Escribir "b) La suma de los numeros que se encuentran enres el 1 y el 10 (incluidos) es ", sumatoria
+
+Finalgoritmo
+		
+
+	 

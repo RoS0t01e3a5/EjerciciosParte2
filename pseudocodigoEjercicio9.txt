@@ -1,0 +1,26 @@
+Algoritmo EjercicioNueve
+	temperaturaUno = 0
+	temperaturaDos = 0
+	contadorTemUno = 0
+	contadorTemDos = 0
+	Escribir "Ingresar la temperatura uno"
+	leer temperaturaUno
+	Escribir "Ingresar la temperatura dos"
+	leer temperaturaDos
+	
+	Mientras (temperaturaUno>=5 Y temperaturaUno<=15) Y (tempearturaUno>=5 Y temperaturaUno<=15) Y (temperaturaUno<>0)
+		contadorTemUno = contadorTemUno + 1
+		aglomeranteTemUno = aglomeranteTemUno + temperaturaUno
+		contadorTemDos = contadorTemDos + 1
+		aglomeranteTemDos = aglomeranteTemDos + temperaturaDos
+
+		Escribir "Ingresar la nueva temperatura uno"
+		leer temperaturaUno
+		Escribir "Ingresar la nueva temperatura dos"
+		leer temperaturaDos
+	FinMientras
+	promedioTemUno = aglomeradorTemUno/contadorTemUno
+	promedioTemDos = aglomeradorTemDos/contadorTemDos
+	Escribir promedioTemUno, " es el promedio de las temperaturas uno"
+	Escribir promedioTemDos, " es el promedio de las temperaturas dos"
+FinAlgoritmo
