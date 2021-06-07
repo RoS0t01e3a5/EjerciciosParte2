@@ -1,0 +1,59 @@
+Algoritmo EjercicioDoce
+	
+	edadContador = 0
+	edadAglomerador = 0
+	edad = 0
+	altura = 0
+	mujerContador = 0
+	hombreContador = 0
+	mujerAcumulador =0
+	hombreAcumulador = 0
+
+	Escribir "Ingresar la edad en numeros"
+	leer edad
+	
+	Escribir "Ingresar la altura en numeros en centimetros"
+	leer altura
+
+	Escribir "Ingresar la letra correspondiente al genero "
+	Escribir "m hombre"
+	Escribir "f mujer"
+	leer genero
+	
+	Mientras altura>0 Hacer
+		Si(genero="f") Entonces
+			mujerContador = mujerContador + 1
+			mujerAcumulador = mujerAcumulador + altura
+		SiNo
+			si(genero="m") Entonces
+				hombreContador = hombreContador + 1
+				hombreAcumulador = hombreAcumulador + altura
+				
+			FinSi
+		FinSi
+		
+		edadAglomerador = edadAglomerador + 1
+		edadContador = edadContador + 1
+		
+		Escribir "Ingresar la edad en numeros"
+		leer edad
+	
+		Escribir "Ingresar la altura en numeros en centimetros"
+		leer altura
+
+		Escribir "Ingresar la letra correspondiente al genero "
+		Escribir "m hombre"
+		Escribir "f mujer"
+		leer genero
+
+	FinMientras
+	edadPromedio = edadAglomerador/edadContador
+	mujerPromedio = mujerAcumulador/mujerContador
+	hombrePromedio = hombreAcumulador/hombreContador
+
+	Escribir edadPromedio, " Es el promedio de la edad de los participantes  "
+	Escribir mujerPromedio, " Es el promedio de la altura de las mujeres "
+	Escribir hombrePromedio, " Es el promedio de la altura de los hombres "
+FinAlgoritmo
+
+

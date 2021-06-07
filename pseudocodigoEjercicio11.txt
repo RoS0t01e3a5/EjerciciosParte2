@@ -1,0 +1,39 @@
+Algoritmo EjercicioOnce
+	segundaContador = 0
+	imparesContador = 0
+	cerosContador = o
+	paresContador = 0
+	aglomerantePares = 0
+
+	Para i=0 Hasta 10 Hacer
+		varNumero = Aleatorio(0,36)
+		Escribir varNumero, " es el numero aleatorio de la Ruleta ", i
+		
+		Si(varNumero>12 Y varNumero<25)Entonces
+			segundaContador = segundaContador+1
+		FinSi
+
+		Si(varNumero MOD 2=0 Y numero<>0) Entonces
+			paresContador = paresContador+1
+			aglomerantePares = aglomerantePares + varNumero
+		SiNo
+			Si(varNumero<>0 Y varNumero MOD 2=1) Entonces
+				imparesContador = imparesContador + 1
+			FinSi
+		FinSi
+				
+		Si(i=1)Entonces
+			mayorContador = varNumero
+			menorContador = varNumero
+		SiNo
+			Si(varNumero>mayorContador)Entonces
+				mayorContador=varNumero
+		FinSi
+		
+	FinPara
+	paresPromedio = aglomerantePares/paresContador
+
+	Escribir "a) Los numeros impares son en total ", imparesContador
+	Escribir "b) El promedio de los numeros pares sin contar el cero es ", paresPromedio
+	Escribir "c) Numeros que se encuentran entre la segunda docena ", segundaContador
+	Escribir "d) El numero mayor es ", mayorContador

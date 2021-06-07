@@ -1,0 +1,24 @@
+Algoritmo EjercicioCuatro
+	edadMayor = 0
+	edadMenor = 0
+	i = 1
+	muestra = 20
+	Mientras (i=muestra) Hacer
+		numero = Aleatorio(0,90)
+		Escribir " La edad de la persona es ", numero
+		Si(i=1) Entonces
+			edadMayor = numero
+			edadMenor = numero
+		SiNo
+			Si (numero>edadMayor) Entonces
+			edadMayor=numero
+			FinSi
+			Si (numero<edadMenor) Entonces
+			edadMenor=numero
+			FinSi
+		Finsi
+		i=i+1
+	FinMientras
+	Escribir edadMayor, " Es la edad de la persona de mayor edad "
+	Escribir edadMenor, " Es la edad de la persona de mayor edad "
+FinAlgortimo
